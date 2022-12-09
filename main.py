@@ -1,8 +1,13 @@
-alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-            "n", "o", "p", "r", "s", "t", "u", "w", "y", "z"]
+word = "kaszanka"
 
 
-for alphabet in range(len(alphabet)):
-    alphabet[0] = alphabet[[0] + 1]
+for i in range(len(word)):
+    print(ord(word[i]))
 
-print(alphabet)
+#
+# letter = 'a'
+# print("Stara literka: ", letter)
+# letter_ascii = ord(letter)
+# letter_ascii += 3
+# letter = chr(letter_ascii)
+# print("Literka przesunięta i jeden: ", letter)
