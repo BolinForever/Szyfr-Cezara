@@ -1,8 +1,17 @@
-alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-            "n", "o", "p", "r", "s", "t", "u", "w", "y", "z"]
+class Hypothesis4:
+    def encrypt(self, word):
+        print("Word you want to encrypt: ", word)
+        new_word = ""
+        for i in range(len(word)):
+            encode = (ord(word[i]) + 1)
+
+            if encode > 122:
+                encode -= 26
+
+            new_word += chr(encode)
+
+        return new_word
 
 
-for alphabet in range(len(alphabet)):
-    alphabet[0] = alphabet[[0] + 1]
-
-print(alphabet)
+hypothesis = Hypothesis4()
+print("Your encrypted word: ", hypothesis.encrypt("school"))
